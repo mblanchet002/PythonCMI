@@ -21,3 +21,27 @@ Où ℎν est l’énergie du photon avec h la constante de Planck et ν la fré
 
 Comme les rayons X ont des énergies entre 0 et 100 eV, ce sont les électrons de cœur qui sont émis. Ces électrons de cœur ont des énergies caractéristiques à chaque atome, ce qui permet d’identifier l’élément dans un matériau.
 
+#### Instrumentation
+
+L'appareil XPS est composé d’une source de rayons X, une chambre d’irradiation, un canon ionique, un neutralisateur de charges, des pompes, un analyseur d’électrons et un analyseur.
+
+##### Source de rayons X
+Les sources de rayons X sont la partie de l’appareillage qui nous permet d’avoir les rayons X. Le choix du type de source se fait selon les critères suivants :
+-	La résolution de l’énergie du rayon X,
+-	L’énergie des photons émis, il faut une énergie suffisante pour éjecter les électrons
+
+##### Chambre d'irradiation
+La chambre d’irradiation ou chambre d’ultravide est la chambre où l’échantillon est déposé afin d’être irradié. Elle sert à faire l’ultravide et l’environnement dans la chambre doit être exempt de champ magnétique externe.
+
+##### Canon ionique
+Un canon ionique est utilisé pour nettoyer la surface de l’échantillon qui a pu être contaminée par de la poussière et des gaz résiduels de l’atmosphère. Le canon ionique permet aussi de faire un profilage de profondeur, en enregistrant des profils de profondeur et donc analyser la composition de l’échantillon en profondeur.
+
+Les caractéristiques d’un canon sont définies selon :
+-	L’énergie et le courant du faisceai d’ions,
+-	La distribution du courant dans la zone
+-	La taille du point
+
+
+![image](https://user-images.githubusercontent.com/93384155/149346726-c319c2bc-f56b-487f-9a45-23d535299892.png)
+
+
