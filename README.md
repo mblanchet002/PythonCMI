@@ -9,6 +9,8 @@ La spectrométrie photoélectronique X ou spectrométrie de photoélectrons indu
 Lors d’une expérience XPS, l’échantillon est bombardé par des rayons X d’une certaine longueur d’onde, qui émet un électron qui est ensuite détecté. Les électrons éjectés ont des énergies propres à chaque atome, ce qui permet donc de déterminer la composition de l’échantillon. 
 La XPS est très utilisée pour l’analyse des composés inorganiques, des alliages métalliques, semiconducteurs, catalyseurs, céramiques, etc. La méthode est moins utilisée pour des composés dans sa forme hydratée comme des hydrogels car la XPS ne détecte pas l’hydrogène ou l’hélium.
 
+L'objectif de ce projet était de réussir à modéliser l'enveloppe d'un signal XPS (intensité en fonction de l'énergie de liaison).
+
 #### Principe de la XPS
 
 La XPS est une application de l’effet photoélectrique décrit pas Einstein en 1905. Dans cet effet, les électrons sont émis par des atomes en réponse à l’impact d’un rayonnement électromagnétique.
@@ -37,7 +39,7 @@ La chambre d’irradiation ou chambre d’ultravide est la chambre où l’écha
 Un canon ionique est utilisé pour nettoyer la surface de l’échantillon qui a pu être contaminée par de la poussière et des gaz résiduels de l’atmosphère. Le canon ionique permet aussi de faire un profilage de profondeur, en enregistrant des profils de profondeur et donc analyser la composition de l’échantillon en profondeur.
 
 Les caractéristiques d’un canon sont définies selon :
--	L’énergie et le courant du faisceai d’ions,
+-	L’énergie et le courant du faisceau d’ions,
 -	La distribution du courant dans la zone
 -	La taille du point
 
@@ -45,3 +47,10 @@ Les caractéristiques d’un canon sont définies selon :
 ![image](https://user-images.githubusercontent.com/93384155/149346726-c319c2bc-f56b-487f-9a45-23d535299892.png)
 
 
+#### Contenu du notebook Projet_XPS
+
+Pour réaliser ce projet nous avons travailler sur un seul notebook nommé Projet_XPS. 
+
+Sur ce notebook, nous avons tout d'abord tenté un première technique permettant de créer l'enveloppe du signal, il s'agit de découper la courbe en plusieurs morceaux afin d'isoler les pics du signal, sur chacun de ses moreceaux on créé une fonction gaussienne approximative en fonction de trois valeurs : la valeur sur l'axe des abscisses du sommet du pic (mu), la hauteur du pic (a) et sa largeur (sigma), ensuite on utilise la fonction curv_fit sur cette fonction pour trouver la gaussienne qui se rapproche au mieux du signal, enfin on concatène les différents morceaux. 
+
+La première technique n'étant pas totalement satisfaisante, nous en avons essayé une deuxième qui utilise la fonction curv_fit sur la somme de gaussiennes ce qui nous permet d'avoir une courbe plus réaliste sans coupure.
