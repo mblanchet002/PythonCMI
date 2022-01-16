@@ -43,7 +43,13 @@ Les caractéristiques d’un canon sont définies selon :
 -	La distribution du courant dans la zone
 -	La taille du point
 
+##### Analyseur
+Le but principal d’un analyseur d’électrons est de ralentir les électrons afin d’avoir la meilleure résolution possible dans les spectres obtenus.
 
+##### Détecteur
+Finalement, on a le detecteur, qui permet de détecter l'énergie de l'électron éjecté et donc savoir de quel atome il provienne.
+
+##### Schéma d'un appareil XPS
 ![image](https://user-images.githubusercontent.com/93384155/149346726-c319c2bc-f56b-487f-9a45-23d535299892.png)
 
 
